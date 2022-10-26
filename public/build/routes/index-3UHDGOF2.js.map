@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../app/components/nav.jsx", "../../../app/routes/index.jsx"],
+  "sourcesContent": ["export default function Nav() {\n    return (\n        <nav>\n            <ul>\n                <li><strong>Brand</strong></li>\n            </ul>\n            <ul>\n                <li><a href=\"#\">Link</a></li>\n                <li><a href=\"#\">Link</a></li>\n                <li><a href=\"#\" role=\"button\">Button</a></li>\n            </ul>\n        </nav>\n    )\n}", "import Nav from \"~/components/nav\"\n\nexport default function Index() {\n  return (\n    <div className=\"container\">\n      <Nav />\n    </div>\n  );\n}\n"],
+  "mappings": ";;;;;;AAAA;AAAe,SAAR,MAAuB;AAC1B,SACI,mDAAC;AAAA,IACG;AAAA,yDAAC;AAAA,QACG,6DAAC;AAAA,UAAG,6DAAC;AAAA,YAAO;AAAA,aAAR;AAAA;AAAA;AAAA;AAAA,iBAAa;AAAA,WAAjB;AAAA;AAAA;AAAA;AAAA,eAA0B;AAAA,SAD9B;AAAA;AAAA;AAAA;AAAA,aAEA;AAAA,MACA,mDAAC;AAAA,QACG;AAAA,6DAAC;AAAA,YAAG,6DAAC;AAAA,cAAE,MAAK;AAAA,cAAI;AAAA,eAAZ;AAAA;AAAA;AAAA;AAAA,mBAAgB;AAAA,aAApB;AAAA;AAAA;AAAA;AAAA,iBAAwB;AAAA,UACxB,mDAAC;AAAA,YAAG,6DAAC;AAAA,cAAE,MAAK;AAAA,cAAI;AAAA,eAAZ;AAAA;AAAA;AAAA;AAAA,mBAAgB;AAAA,aAApB;AAAA;AAAA;AAAA;AAAA,iBAAwB;AAAA,UACxB,mDAAC;AAAA,YAAG,6DAAC;AAAA,cAAE,MAAK;AAAA,cAAI,MAAK;AAAA,cAAS;AAAA,eAA1B;AAAA;AAAA;AAAA;AAAA,mBAAgC;AAAA,aAApC;AAAA;AAAA;AAAA;AAAA,iBAAwC;AAAA;AAAA,SAH5C;AAAA;AAAA;AAAA;AAAA,aAIA;AAAA;AAAA,KARJ;AAAA;AAAA;AAAA;AAAA,SASA;AAER;;;ACbA;AAEe,SAAR,QAAyB;AAC9B,SACE,mDAAC;AAAA,IAAI,WAAU;AAAA,IACb,6DAAC,SAAD;AAAA;AAAA;AAAA;AAAA,WAAK;AAAA,KADP;AAAA;AAAA;AAAA;AAAA,SAEA;AAEJ;",
+  "names": []
+}
