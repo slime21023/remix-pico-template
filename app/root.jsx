@@ -10,7 +10,7 @@ import {
 
 export const meta = () => ({
   charset: "utf-8",
-  title: "saleor-remix",
+  title: "pico-remix-template",
   viewport: "width=device-width,initial-scale=1",
 });
 
