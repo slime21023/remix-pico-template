@@ -119,7 +119,11 @@ __export(root_exports, {
   links: () => links,
   meta: () => meta
 });
-var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), links = () => [
+var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = require("react/jsx-dev-runtime"), meta = () => ({
+  charset: "utf-8",
+  title: "saleor-remix",
+  viewport: "width=device-width,initial-scale=1"
+}), links = () => [
   {
     rel: "stylesheet",
     href: "https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
@@ -128,65 +132,197 @@ var import_react2 = require("@remix-run/react"), import_jsx_dev_runtime = requir
     rel: "stylesheet",
     href: "https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.7.1/gridlex.min.css"
   }
-], meta = () => ({
-  charset: "utf-8",
-  title: "New Remix App",
-  viewport: "width=device-width,initial-scale=1"
-});
-function App() {
+];
+function Document({ children }) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("html", {
-    lang: "en",
     children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("head", {
         children: [
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Meta, {}, void 0, !1, {
             fileName: "app/root.jsx",
-            lineNumber: 31,
+            lineNumber: 32,
             columnNumber: 9
           }, this),
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Links, {}, void 0, !1, {
             fileName: "app/root.jsx",
-            lineNumber: 32,
+            lineNumber: 33,
             columnNumber: 9
           }, this)
         ]
       }, void 0, !0, {
         fileName: "app/root.jsx",
-        lineNumber: 30,
+        lineNumber: 31,
         columnNumber: 7
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("body", {
+        className: "container",
         children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Outlet, {}, void 0, !1, {
-            fileName: "app/root.jsx",
-            lineNumber: 35,
-            columnNumber: 9
-          }, this),
+          children,
           /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.ScrollRestoration, {}, void 0, !1, {
-            fileName: "app/root.jsx",
-            lineNumber: 36,
-            columnNumber: 9
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Scripts, {}, void 0, !1, {
             fileName: "app/root.jsx",
             lineNumber: 37,
             columnNumber: 9
           }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.LiveReload, {}, void 0, !1, {
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Scripts, {}, void 0, !1, {
             fileName: "app/root.jsx",
             lineNumber: 38,
+            columnNumber: 9
+          }, this),
+          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.LiveReload, {}, void 0, !1, {
+            fileName: "app/root.jsx",
+            lineNumber: 39,
             columnNumber: 9
           }, this)
         ]
       }, void 0, !0, {
         fileName: "app/root.jsx",
-        lineNumber: 34,
+        lineNumber: 35,
         columnNumber: 7
       }, this)
     ]
   }, void 0, !0, {
     fileName: "app/root.jsx",
-    lineNumber: 29,
+    lineNumber: 30,
+    columnNumber: 5
+  }, this);
+}
+function Layout({ children }) {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_jsx_dev_runtime.Fragment, {
+    children: [
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("header", {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("nav", {
+          children: [
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
+              children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
+                children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
+                  to: "/",
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("strong", {
+                    children: "PicoRemix"
+                  }, void 0, !1, {
+                    fileName: "app/root.jsx",
+                    lineNumber: 52,
+                    columnNumber: 28
+                  }, this)
+                }, void 0, !1, {
+                  fileName: "app/root.jsx",
+                  lineNumber: 52,
+                  columnNumber: 15
+                }, this)
+              }, void 0, !1, {
+                fileName: "app/root.jsx",
+                lineNumber: 51,
+                columnNumber: 13
+              }, this)
+            }, void 0, !1, {
+              fileName: "app/root.jsx",
+              lineNumber: 50,
+              columnNumber: 11
+            }, this),
+            /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
+              children: [
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
+                    to: "/",
+                    children: "Layout"
+                  }, void 0, !1, {
+                    fileName: "app/root.jsx",
+                    lineNumber: 56,
+                    columnNumber: 17
+                  }, this)
+                }, void 0, !1, {
+                  fileName: "app/root.jsx",
+                  lineNumber: 56,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
+                    to: "/",
+                    children: "Elements"
+                  }, void 0, !1, {
+                    fileName: "app/root.jsx",
+                    lineNumber: 57,
+                    columnNumber: 17
+                  }, this)
+                }, void 0, !1, {
+                  fileName: "app/root.jsx",
+                  lineNumber: 57,
+                  columnNumber: 13
+                }, this),
+                /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
+                  children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Link, {
+                    to: "/",
+                    children: "Components"
+                  }, void 0, !1, {
+                    fileName: "app/root.jsx",
+                    lineNumber: 58,
+                    columnNumber: 17
+                  }, this)
+                }, void 0, !1, {
+                  fileName: "app/root.jsx",
+                  lineNumber: 58,
+                  columnNumber: 13
+                }, this)
+              ]
+            }, void 0, !0, {
+              fileName: "app/root.jsx",
+              lineNumber: 55,
+              columnNumber: 11
+            }, this)
+          ]
+        }, void 0, !0, {
+          fileName: "app/root.jsx",
+          lineNumber: 49,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/root.jsx",
+        lineNumber: 48,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("main", {
+        className: "container",
+        children
+      }, void 0, !1, {
+        fileName: "app/root.jsx",
+        lineNumber: 62,
+        columnNumber: 7
+      }, this),
+      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("footer", {
+        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("p", {
+          children: "\xA9 You!"
+        }, void 0, !1, {
+          fileName: "app/root.jsx",
+          lineNumber: 66,
+          columnNumber: 9
+        }, this)
+      }, void 0, !1, {
+        fileName: "app/root.jsx",
+        lineNumber: 65,
+        columnNumber: 7
+      }, this)
+    ]
+  }, void 0, !0, {
+    fileName: "app/root.jsx",
+    lineNumber: 47,
+    columnNumber: 5
+  }, this);
+}
+function App() {
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Document, {
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Layout, {
+      children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(import_react2.Outlet, {}, void 0, !1, {
+        fileName: "app/root.jsx",
+        lineNumber: 76,
+        columnNumber: 9
+      }, this)
+    }, void 0, !1, {
+      fileName: "app/root.jsx",
+      lineNumber: 75,
+      columnNumber: 7
+    }, this)
+  }, void 0, !1, {
+    fileName: "app/root.jsx",
+    lineNumber: 74,
     columnNumber: 5
   }, this);
 }
@@ -196,91 +332,6 @@ var routes_exports = {};
 __export(routes_exports, {
   default: () => Index
 });
-
-// app/components/nav.jsx
-var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
-function Nav() {
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("nav", {
-    children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
-        children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
-          children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("strong", {
-            children: "Brand"
-          }, void 0, !1, {
-            fileName: "app/components/nav.jsx",
-            lineNumber: 5,
-            columnNumber: 21
-          }, this)
-        }, void 0, !1, {
-          fileName: "app/components/nav.jsx",
-          lineNumber: 5,
-          columnNumber: 17
-        }, this)
-      }, void 0, !1, {
-        fileName: "app/components/nav.jsx",
-        lineNumber: 4,
-        columnNumber: 13
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("ul", {
-        children: [
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
-              href: "#",
-              children: "Link"
-            }, void 0, !1, {
-              fileName: "app/components/nav.jsx",
-              lineNumber: 8,
-              columnNumber: 21
-            }, this)
-          }, void 0, !1, {
-            fileName: "app/components/nav.jsx",
-            lineNumber: 8,
-            columnNumber: 17
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
-              href: "#",
-              children: "Link"
-            }, void 0, !1, {
-              fileName: "app/components/nav.jsx",
-              lineNumber: 9,
-              columnNumber: 21
-            }, this)
-          }, void 0, !1, {
-            fileName: "app/components/nav.jsx",
-            lineNumber: 9,
-            columnNumber: 17
-          }, this),
-          /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("li", {
-            children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("a", {
-              href: "#",
-              role: "button",
-              children: "Button"
-            }, void 0, !1, {
-              fileName: "app/components/nav.jsx",
-              lineNumber: 10,
-              columnNumber: 21
-            }, this)
-          }, void 0, !1, {
-            fileName: "app/components/nav.jsx",
-            lineNumber: 10,
-            columnNumber: 17
-          }, this)
-        ]
-      }, void 0, !0, {
-        fileName: "app/components/nav.jsx",
-        lineNumber: 7,
-        columnNumber: 13
-      }, this)
-    ]
-  }, void 0, !0, {
-    fileName: "app/components/nav.jsx",
-    lineNumber: 3,
-    columnNumber: 9
-  }, this);
-}
-
-// app/components/card.jsx
 var import_jsx_dev_runtime = require("react/jsx-dev-runtime");
 function Card({ imageUrl = "", header = "", footer = "" }) {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("article", {
@@ -288,34 +339,32 @@ function Card({ imageUrl = "", header = "", footer = "" }) {
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("header", {
         children: header
       }, void 0, !1, {
-        fileName: "app/components/card.jsx",
-        lineNumber: 5,
-        columnNumber: 13
+        fileName: "app/routes/index.jsx",
+        lineNumber: 4,
+        columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", {
         src: imageUrl
       }, void 0, !1, {
-        fileName: "app/components/card.jsx",
-        lineNumber: 6,
-        columnNumber: 13
+        fileName: "app/routes/index.jsx",
+        lineNumber: 5,
+        columnNumber: 11
       }, this),
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("footer", {
         children: footer
       }, void 0, !1, {
-        fileName: "app/components/card.jsx",
-        lineNumber: 7,
-        columnNumber: 13
+        fileName: "app/routes/index.jsx",
+        lineNumber: 6,
+        columnNumber: 11
       }, this)
     ]
   }, void 0, !0, {
-    fileName: "app/components/card.jsx",
-    lineNumber: 4,
-    columnNumber: 9
+    fileName: "app/routes/index.jsx",
+    lineNumber: 3,
+    columnNumber: 7
   }, this);
 }
-
-// app/routes/index.jsx
-var import_jsx_dev_runtime = require("react/jsx-dev-runtime"), images = [
+var images = [
   { imageUrl: "/images/img1.jpeg", header: "image 1", footer: "" },
   { imageUrl: "/images/img2.jpeg", header: "image 2", footer: "" },
   { imageUrl: "/images/img3.jpeg", header: "image 3", footer: "" },
@@ -332,42 +381,35 @@ function createCard(item, index) {
       footer: item.footer
     }, void 0, !1, {
       fileName: "app/routes/index.jsx",
-      lineNumber: 16,
+      lineNumber: 23,
       columnNumber: 7
     }, this)
   }, index, !1, {
     fileName: "app/routes/index.jsx",
-    lineNumber: 15,
+    lineNumber: 22,
     columnNumber: 5
   }, this);
 }
 function Index() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
     className: "container",
-    children: [
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Nav, {}, void 0, !1, {
-        fileName: "app/routes/index.jsx",
-        lineNumber: 24,
-        columnNumber: 7
-      }, this),
-      /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
-        className: "grid-3_xs-1",
-        children: images.map(createCard)
-      }, void 0, !1, {
-        fileName: "app/routes/index.jsx",
-        lineNumber: 25,
-        columnNumber: 7
-      }, this)
-    ]
-  }, void 0, !0, {
+    children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", {
+      className: "grid-3_xs-1",
+      children: images.map(createCard)
+    }, void 0, !1, {
+      fileName: "app/routes/index.jsx",
+      lineNumber: 31,
+      columnNumber: 7
+    }, this)
+  }, void 0, !1, {
     fileName: "app/routes/index.jsx",
-    lineNumber: 23,
+    lineNumber: 30,
     columnNumber: 5
   }, this);
 }
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { version: "e5f34a7b", entry: { module: "/build/entry.client-6DYZ46SE.js", imports: ["/build/_shared/chunk-C3IYJTJ6.js", "/build/_shared/chunk-VG25B4KW.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-XW2VBZX5.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-RNZ4SLTY.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-E5F34A7B.js" };
+var assets_manifest_default = { version: "38914985", entry: { module: "/build/entry.client-CDVIWO4A.js", imports: ["/build/_shared/chunk-AZJ6AJZB.js", "/build/_shared/chunk-VG25B4KW.js"] }, routes: { root: { id: "root", parentId: void 0, path: "", index: void 0, caseSensitive: void 0, module: "/build/root-EWSI3CDK.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 }, "routes/index": { id: "routes/index", parentId: "root", path: void 0, index: !0, caseSensitive: void 0, module: "/build/routes/index-XCA3M5HR.js", imports: void 0, hasAction: !1, hasLoader: !1, hasCatchBoundary: !1, hasErrorBoundary: !1 } }, url: "/build/manifest-38914985.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var assetsBuildDirectory = "public/build", publicPath = "/build/", entry = { module: entry_server_exports }, routes = {

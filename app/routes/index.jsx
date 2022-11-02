@@ -1,5 +1,12 @@
-import Nav from "~/components/nav"
-import Card from "~/components/card"
+function Card({ imageUrl="", header="", footer="" }) {
+  return (
+      <article>
+          <header>{header}</header>
+          <img src={imageUrl} />
+          <footer>{footer}</footer>
+      </article>
+  )
+}
 
 const images = [
   { imageUrl: "/images/img1.jpeg", header:"image 1", footer: "" },
@@ -21,7 +28,6 @@ function createCard(item, index) {
 export default function Index() {
   return (
     <div className="container">
-      <Nav />
       <div className="grid-3_xs-1">
         { images.map(createCard) }
       </div>
